@@ -14,3 +14,20 @@ The final model was trained on a dataset with images that had their noise level 
 
 ## Evaluation
 For evaluating the model, I test it on a dataset of 1,100 samples across 11 different noise levels from 0 to 1, with 100 samples of each noise level. I then calculate the average IoU for each noise level. The `img_tensor` is given its dimensions to match the input shape that the model expects. 
+
+In the code, it is possible to load the model weights from the `circle_model.pth` file.
+
+The performance of the final model is the following:
+```
+Average IoU for noise level 0: 0.9260975771661327
+Average IoU for noise level 0.1: 0.9248244487549916
+Average IoU for noise level 0.2: 0.9307616789817341
+Average IoU for noise level 0.3: 0.9279325732484223
+Average IoU for noise level 0.4: 0.9321503261895749
+Average IoU for noise level 0.5: 0.9303383664376723
+Average IoU for noise level 0.6: 0.8653112519508572
+Average IoU for noise level 0.7: 0.545983215936083
+Average IoU for noise level 0.8: 0.2209339611156755
+Average IoU for noise level 0.9: 0.1359130410140969
+Average IoU for noise level 1: 0.09061128967740162
+```
